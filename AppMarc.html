@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de candidature</title>
+
+    <style>
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Couleur de fond claire */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Pour gérer les éléments flottants */
+}
+
+.header {
+    background-color: #f8f8f8; /* Couleur de fond légèrement plus foncée pour l'en-tête */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    height: 50px; /* Ajustez la hauteur du logo */
+    margin-right: 10px;
+}
+
+.breaking-news {
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.sponsored {
+    background-color: lightblue;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.file-upload button {
+    padding: 8px 16px;
+    background-color: #4CAF50; /* Couleur verte pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.gender-options label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Couleur bleue pour le bouton "En savoir plus" */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="MIJ_7022 copie-1@1557767250.jpg" alt="Logo"> 
+            <div class="breaking-news">
+                <p>Breaking news</p>
+            </div>
+            <div class="sponsored">
+                <p>Sponsorisé</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h1>TRAVAIL AVEC MARCEL </h1>
+            <h2>FORMULAIRE DE CANDIDATURE POUR UN EMPLOI</h2>
+            <form action="mailto:Marcelvictormbiya@gmail.com" method="post">
+
+
+                <div class="input-group">
+                    <label for="Nom-Complet">1. Nom Complet</label>
+                    <input type="text" name="Nom-Complet" id="Nom-Complet" required style="height: 30px;">
+                </div>
+
+                <div class="input-group">
+                    <label for="Province">2. Choisissez la province</label>
+                    <select name="Province" id="Province" required style="height: 30px;font-size: 13px;">
+                        <option value="Kinshasa">Kinshasa</option>
+                        <option value="Mbuji-mayi">Mbuji-mayi</option>
+                        <option value="Katanga">Katanga</option>
+                        <option value="Kananga">Kananga</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>3. Sexe</label>
+                    <div class="gender-options" >
+                        <label><input type="radio" name="Sexe" value="Homme"> Homme</label>
+                        <label><input type="radio" name="Sexe" value="Femme"> Femme</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="Contact">4. Contact</label>
+                    <input type="tel" name="Contact" id="Contact" required style="height: 30px;">
+                </div>
+                <div class="form-group">
+                    <label for="email">5. Email</label>
+                    <input type="email" id="email" name="email" required style="height: 20px; width: 330px;">
+                </div> <br>
+               
+                <div class="form-group">
+                    <label for="cv">Télécharger votre CV</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div><br>
+                <button type="submit" class="submit-button">Envoyer la candidature</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
