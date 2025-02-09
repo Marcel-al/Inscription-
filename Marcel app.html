@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    
+<style>
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 62%;
+    padding: 5px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 150px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+   
+    color: rgb(8, 7, 7);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 100px;
+    width: 140px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+fieldset .for{
+    margin-bottom: 15px;
+    margin-left: 100px;
+    width: 160px;   
+}
+/* Responsive adjustment */
+@media(max-width: 400px){
+
+    .container{
+        padding: 10px;
+    }
+}
+
+</style>
+    
+</head>
+<body>
+    
+    <div class="container">
+        <fieldset class="form-group">
+            <legend><h2>Formulaire d'inscription</h2></legend> 
+            
+            <form action="mailto:Marcelvictormbiya@gmail.com" method="post" enctype="text/plain">
+                <table>
+                    <tr>
+                        <td> <label for="prenom">Prénom</label></td>
+                        <td> <input type="text" id="prenom" name="prenom" required style="border: 1px solid#050606; width: 130px; margin-left: 85px;" ></td>
+                    </tr>
+                </table>
+    
+                <table>
+                    <tr>
+                        <td> <label for="nom">Nom</label></td>
+                        <td> <input type="text" id="nom" name="nom" required style="border: 1px solid#050606; width: 130px; margin-left: 107px;" ></td>
+                    </tr>
+                </table>
+                <fieldset class="for">
+                    <legend>Sexe</legend>
+                    <label class="masculin">
+                        <input type="radio" name="genre" value="masculin" required style="margin-left: 45px;"> Masculin
+                    </label>
+                    <label class="masculin">
+                        <input type="radio" name="genre" value="feminin" required style="margin-left: 45px;"> Féminin
+                    </label>
+                </fieldset>
+       <table>
+        <tr>
+            <td><label for="date_naissance">Date de naissance</label> </td>
+             <td><input type="date" id="date_naissance" name="date_naissance" required style="border: 1px solid#050606; width: 130px; margin-left: 9px;" > </td> 
+        
+        </tr>
+        
+       </table>
+           <table>
+            <tr>
+                <td><label for="nationalite">Nationalité</label></td>
+                <td><select id="nationalite" name="nationalite" required style="border: 1px solid#050606; width: 130px; margin-left: 65px;" >
+                    <option value="">Sélectionner</option>
+                    <option value="congolaise">Congolaise</option>
+                    <option value="etrangere">Étrangère</option>
+                    </select></td>
+            </tr>
+           </table>   
+
+           <table>
+            <tr>
+                <td>  <label for="commentaire">Commentaire</label></td>
+                <td><textarea id="commentaire" name="commentaire" rows="4" cols="50" style="border: 1px solid#050606; width: 130px; margin-left: 45px;" ></textarea></td>
+            </tr>
+           </table>  
+    
+                <input type="submit" value="S'inscrire">
+            </form>
+        </fieldset>
+        
+    </div>
+</body>
+</html>
